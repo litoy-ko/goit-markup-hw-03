@@ -18,6 +18,9 @@ body {
     /* color: inherit; */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
 .bg-dark {
@@ -80,11 +83,44 @@ body {
     letter-spacing: 0.4px;
 }
 
+.container {
+    width: 1158px;
+}
 
+.d-flex {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about ul,
+.what-we-do ul,
+.team ul {
+    justify-content: center;
+}
 
 /* END OF GENERAL STYLING----------------------------- */
 
 /* header styling----------------------------------------------- */
+.header {
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.header .d-flex {
+    gap: 76px;
+}
+
+.header .list {
+    gap: 40px;
+}
+
 .logo-studio-nav {
     color: var(--NAVY-BLUE);
 }
@@ -116,11 +152,33 @@ body {
     /* multiplier */
     letter-spacing: 0.32px;
 }
+
+
 /* end of header styling---------------------------- */
 
 
+/* team section styling--------------------------- */
+.team {
+    background-color: var(--CLOUD);
+}
+
+.team .list {
+    text-align: center;
+}
+
+.team .list li {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+   
+}
 
 /* Hero section styling  */
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+}
 
 .hero-text {
     color: var(--WHITE);
@@ -130,21 +188,20 @@ body {
     line-height: 1.071;
     /* multiplier */
     letter-spacing: 1.12px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .hero-btn {
     border: none;
     border-radius: 4px;
     background: var(--IRIS);
-    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--WHITE);
-    font-family: inherit;
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     /* multiplier */
-    letter-spacing: 0.64px
+    letter-spacing: 0.64px;
+    padding: 16px 32px;
 }
 
 .hero-btn:hover, .hero-btn:focus{
@@ -154,6 +211,11 @@ body {
 /* end of hero section styling---------------- */
 
 /* footer styling----------------------------------------- */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+}
 .logo-studio-footer {
     color: var(--CLOUD);
 }
